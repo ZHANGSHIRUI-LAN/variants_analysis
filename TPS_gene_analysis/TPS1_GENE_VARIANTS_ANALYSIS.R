@@ -7,7 +7,7 @@ library(plotrix)
 TPS1_GENE_VARIANTS_ANALYSIS <- function(direc,offset,tableFrame_snps,tableFrame_indel) 
 {
 
-   #=====================TPS1============================
+  #=====================TPS1============================
   TPS_1_exon_start<-c(17431851,17431433,17431046,17430539,17430222,17429948,17429496)
   TPS_1_exon_end<-c(17431531,17431160,17430668,17430321,17430084,17429703,17428944)
 
@@ -212,8 +212,6 @@ TPS1_GENE_VARIANTS_ANALYSIS <- function(direc,offset,tableFrame_snps,tableFrame_
   #       col = hcl.colors(length(data), "Spectral"),explode = 0.1)
  
    #=================================draw Pie Charts===================
-  
-
   i<-1
   while(i<=6)
   {
@@ -406,7 +404,6 @@ TPS1_GENE_VARIANTS_ANALYSIS <- function(direc,offset,tableFrame_snps,tableFrame_
   #         col = "darkred",
   #         horiz = FALSE)
 #=======================================indel============================================
-
   return(0)
 
 

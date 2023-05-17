@@ -38,8 +38,6 @@ table_indel <- vcfR2tidy(vcf_indel,single_frame = FALSE)
 #transfer list into frame
 tableFrame_snps_CATR <- as.data.frame(table_snps$fix, row.names = TRUE)
 tableFrame_indel_CATR <- as.data.frame(table_indel$fix, row.names = TRUE)
-
-
 #=================================CATY===========================================
 # Input the SNP vcf files.
 vcf_file<-"CATY_HYMGMDSX2_raw_snp.vcf"
@@ -56,7 +54,6 @@ table_indel <- vcfR2tidy(vcf_indel,single_frame = FALSE)
 #transfer list into frame
 tableFrame_snps_CATY <- as.data.frame(table_snps$fix, row.names = TRUE)
 tableFrame_indel_CATY <- as.data.frame(table_indel$fix, row.names = TRUE)
-
 #=================================COFC===========================================
 # Input the SNP vcf files.
 vcf_file<-"COFC5_H3YFFDSX2_raw_snp.vcf"
@@ -73,7 +70,6 @@ table_indel <- vcfR2tidy(vcf_indel,single_frame = FALSE)
 #transfer list into frame
 tableFrame_snps_COFC <- as.data.frame(table_snps$fix, row.names = TRUE)
 tableFrame_indel_COFC <- as.data.frame(table_indel$fix, row.names = TRUE)
-
 #=================================COFT===========================================
 # Input the SNP vcf files.
 vcf_file<-"COFT2_H3YFFDSX2_raw_snp.vcf"
@@ -90,7 +86,6 @@ table_indel <- vcfR2tidy(vcf_indel,single_frame = FALSE)
 #transfer list into frame
 tableFrame_snps_COFT <- as.data.frame(table_snps$fix, row.names = TRUE)
 tableFrame_indel_COFT <- as.data.frame(table_indel$fix, row.names = TRUE)
-
 #=================================G351===========================================
 # Input the SNP vcf files.
 vcf_file<-"G351_HYHYVDSX2_raw_snp.vcf"
@@ -107,7 +102,6 @@ table_indel <- vcfR2tidy(vcf_indel,single_frame = FALSE)
 #transfer list into frame
 tableFrame_snps_G351 <- as.data.frame(table_snps$fix, row.names = TRUE)
 tableFrame_indel_G351 <- as.data.frame(table_indel$fix, row.names = TRUE)
-
 #=================================HDT===========================================
 # Input the SNP vcf files.
 vcf_file<-"HDT_HYMGMDSX2_raw_snp.vcf"
@@ -124,8 +118,6 @@ table_indel <- vcfR2tidy(vcf_indel,single_frame = FALSE)
 #transfer list into frame
 tableFrame_snps_HDT <- as.data.frame(table_snps$fix, row.names = TRUE)
 tableFrame_indel_HDT <- as.data.frame(table_indel$fix, row.names = TRUE)
-
-
 #=============================================TPS1========================================================
 
 source("K:/SNP_process/compare_with_ref/code/variants_statistic_activity/TPS1_GENE_VARIANTS_ANALYSIS.R")
@@ -145,9 +137,6 @@ TPS1_GENE_VARIANTS_ANALYSIS(0,0,tableFrame_snps_G351,tableFrame_indel_G351)
 
 source("L:/SNP_process/compare_with_ref/code/variants_statistic_activity/TPS1_GENE_VARIANTS_ANALYSIS.R")
 TPS1_GENE_VARIANTS_ANALYSIS(0,0,tableFrame_snps_HDT,tableFrame_indel_HDT)
-
-
-
 #=============================================TPS2========================================================
 
 source("L:/SNP_process/compare_with_ref/code/variants_statistic_activity/TPS2_GENE_VARIANTS_ANALYSIS.R")
